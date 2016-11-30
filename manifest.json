@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Live Link",
+    "version": "0.1",
+    "description": "Clearly display the link URL to the current live-feed in the youtube live dashboard. Useful (necessary!) if your stream is marked as unlisted.",
+    "author": "gammy",
+    "homepage_url": "https://github.com/gammy/",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/live_dashboard"],
+      "js": ["youtube_live_link.js"]
+    }
+  ]
+}
