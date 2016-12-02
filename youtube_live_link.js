@@ -1,4 +1,4 @@
-function getYoutubeLiveURL() {
+function getYoutubeLiveID() {
     // Get the watch id from the dataset in 'metadata-app'
     elems = document.getElementsByClassName('metadata-app hid');
     if(elems.length == 0) {
@@ -22,7 +22,7 @@ function insertYoutubeLiveURL(url) {
     div_status.innerHTML += '<br/>' + '(Live URL: <a href="' + url + '">' + url + '</a>)';
 }
 
-var video_id = getYoutubeLiveURL();
+var video_id = getYoutubeLiveID();
 if(video_id) {
     var video_url = 'https://www.youtube.com/watch?v=' + video_id;
     insertYoutubeLiveURL(video_url);
